@@ -1,19 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | HBOMax</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/SigIn.css" />
+    <title>Login | HBO Max</title>
+    <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- GOOGLE FONTS -->
+  </head>
+
 <body>
+    <!-- NAVBAR -->
     <nav class="menu">
         <a href="./index.html" class="menu__logo">
-          <img class="logo-img" src="hbo-logo.svg" alt="Logotipo do HBO MAX">
+            <img class="logo-img" src="hbo-logo.svg" alt="Logotipo do HBO MAX">
         </a>
-      <div>
-        <a href="./SignIn.html" class="menu__item">Entrar</a>
-        <a href="#subscription" class="menu__item menu__item--button button">Assine Agora</a>
-      </div>
+        <div>
+            <a href="./SignIn.html" class="menu__item">Entrar</a>
+            <a href="#subscription" class="menu__item menu__item--button button">Assine Agora</a>
+        </div>
     </nav>
+    <!-- NAVBAR -->
+    <!-- MAIN -->
+    <main class="main">
+        <form class="login container">
+            <h1 class="login__title">Entrar</h1>
+            <label class="login__lable">Você tem uma conta na HBOMax?</label>
+            <input class="campo-login" type="email" name="email" id="email" placeholder="Endereço de e-mail">
+            <input class="campo-login" type="password" name="password" id="password" placeholder="Digite sua senha"
+                minlength="8">
+
+            <div class="login__actions">
+                <button type="submit" class="button button--gradient">Entrar</button>
+                <a href="#" class="login__link">Esqueceu a senha?</a>
+            </div>
+        </form>
+    </main>
+    <!-- MAIN -->
+
+
+    <!-- FOOTER -->
+    <footer class="footer container">
+        <div>
+            <a class="links" href="https://www.max.com/br/pt">Agora na hbo max</a>
+            <a class="links" href="https://www.hbomax.com/br/pt/coming-soon">Em breve</a>
+            <a class="links" href="https://www.hbomax.com/br/pt/feature">Filme em destaque</a>
+            <a class="links" href="https://www.hbomax.com/br/pt/series">Séries</a>
+            <a class="links" href="https://help.hbomax.com/br">Ajuda</a>
+        </div>
+        <p class="text--small footer__direitos">© 2022 WarnerMedia Direct Latin America, LLC. Todos os direitos
+            reservados. HBO Max é usado sob licença.</p>
+        <div class="social">
+            <a class="social-link" href="https://www.facebook.com/HBO"><img src="./assets/images/fb_0.png"
+                    alt="Facebook-link"></a>
+            <a class="social-link" href="https://x.com/StreamOnMax"><img src="./assets/images/twitter_0.png"
+                    alt="Twitter-link"></a>
+            <a class="social-link" href="https://www.instagram.com/hbomaxnl/"><img src="./assets/images/instagram_0.png"
+                    alt="Instagram-link"></a>
+            <a class="social-link" href="https://www.youtube.com/c/hbomaxbr"><img src="./assets/images/youtube_0.png"
+                    alt="Youtube-link"></a>
+        </div>
+    </footer>
+    <!-- FOOTER -->
 </body>
+
 </html>
